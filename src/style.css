@@ -1,0 +1,12 @@
+:root {
+  --title-font: cormorant unicase;
+  --paragraph-font: cormorant garamond;
+}
+h1 {
+  font-family: var(--title-font);
+  font-size: 150px;
+}
+
+h2 {
+  font-family: var(--paragraph-font);
+}
