@@ -71,8 +71,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px;
-  padding-top: 75px;
+  padding: 35px;
 }
 
 section.secondary {
@@ -186,6 +185,9 @@ main a {
   font-size: 16px;
   line-height: 1.5;
 }
+main a:visited {
+  color: white;
+}
 footer {
   color: white;
   font-family: var(--paragraph-font);
@@ -222,6 +224,9 @@ font a {
   font-size: 20px;
   line-height: 24px;
 }
+footer a:visited {
+  color: rgb(185, 132, 8);
+}
 
 @media (max-width: 900px) {
   header h3 {
@@ -238,7 +243,7 @@ font a {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-  selection {
+  section {
     padding: 30px;
   }
   .card-header img {
