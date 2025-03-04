@@ -17,7 +17,7 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -35,12 +35,19 @@ body {
 .text-center {
   text-align: center;
 }
+.embed {
+  width: 100%;
+  aspect-ratio: 1/0.63;
+}
 
 .card {
   background: white;
   padding: 30px 0px;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
 .card-body {
   padding: 30px;
 }
@@ -158,7 +165,7 @@ main h4 {
 
 main h5 {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 17px;
   margin: 9px;
   line-height: 1;
   color: #014606;
@@ -234,6 +241,9 @@ font a {
   selection {
     padding: 30px;
   }
+  .card-header img {
+    display: none;
+  }
 }
 @media (max-width: 570px) {
   header h3 {
@@ -246,5 +256,8 @@ font a {
 
   header h2 {
     font-size: 20px;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
